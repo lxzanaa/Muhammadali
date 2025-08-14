@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro'yhatdan O'tish</title>
+    <!-- Inline Critical CSS -->
+    <style>* {padding: 0;margin: 0;box-sizing: border-box;}body {min-height: 100vh;background: #ECE8E5;font-family: "Montserrat";}.webinar-registration {padding-top: 40px;}.registration-container {max-width: 1240px;margin: 0 auto;padding: 0 20px;}.registration-title {font-family: "Bebas Neue";font-size: 40px;font-weight: 700;line-height: 100%;max-width: 335px;text-align: center;margin: 0 auto 6px;}.registration-title span {color: red;}.registration-description {color: #2C0815;font-weight: 500;font-size: 16px;line-height: 100%;text-align: center;margin-bottom: 20px;}@media (max-width: 400px) {.registration-title {font-size: 30px;}}</style>
+    <!-- Async CSS Loading -->
+    <link rel="stylesheet" href="./css/register.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="./css/blue.css" media="print" onload="this.media='all'" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <section class="webinar-registration">
+        <div class="registration-container">
+            <h2 class="registration-title">Vebinarda qatnashish uchun <span>ro'yxatdan o'ting</span></h2>
+            <p class="registration-description">Ma'lumotlaringizni qoldiring 👇🏻</p>
+            <form class="registration-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Ismingizni kiriting</label>
+                    <input type="text" name="name" class="form-input" placeholder="Ismingiz?">
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Telefon raqamingizni kiriting</label>
+                    <input type="tel" name="phone" class="form-input" placeholder="+998">
+                </div>
+                <div class="form-group">
+                    <label for="school" class="form-label">Maktabingizni tanlang</label>
+                    <select name="school" id="school" class="form-select">
+                        <option value="" disabled selected class="select-option">Filialni tanlang</option>
+                        <option value="toshkent" class="select-option">Toshkent Yuksalish maktabi</option>
+                        <option value="chirchiq" class="select-option">Chirchiq Yuksalish maktabi</option>
+                        <option value="uchtepa" class="select-option">Uchtepa Yuksalish maktabi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age" class="form-label">Farzandingiz yoshini kiriting</label>
+                    <input type="number" name="age" class="form-input" placeholder="Misol: 14">
+                </div>
+            </form>
+            <button class="registration-button">ro'yxatdan o'tish</button>
+        </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
